@@ -10,10 +10,10 @@ const nodeMap = {
         icon: "🦁",
         description: "脊椎动物亚门的一纲，特征包括乳腺、毛发及听觉骨骼的特化，演化历史跨越两亿年。已知约6400种，几乎遍布地球的所有生态系统。",
         geologicalPeriod: "三叠纪早期（约2.2亿年前）",
-        question: "请根据繁殖方式选择演化分支",
+        question: "在约2.2亿年前的三叠纪，早期哺乳动物已出现。请根据繁殖方式，选择你的演化路径：",
         options: [
-            { text: "🥚 通过卵繁殖（鸭嘴兽、针鼹）", target: "prototheria" },
-            { text: "👶 直接产下幼崽（有袋类、胎盘类）", target: "theria" }
+            { text: "🥚 保留卵生习性，通过产卵繁殖后代", target: "prototheria" },
+            { text: "👶 发展出胎生能力，直接产下发育程度不同的幼崽", target: "theria" }
         ]
     },
 
@@ -24,9 +24,9 @@ const nodeMap = {
         icon: "🥚",
         description: "最原始的哺乳动物分支，特征是保留了卵生习性（单孔类），排泄与生殖共用一个泄殖腔。",
         geologicalPeriod: "侏罗纪中期（约1.66亿年前）",
-        question: "现存仅一目：",
+        question: "你选择了保留卵生。这一支系在侏罗纪分化，如今仅存一小群：",
         options: [
-            { text: "🦔 单孔目", target: "monotremata" }
+            { text: "🦔 存活至今，仍保留泄殖腔和卵生", target: "monotremata" }
         ]
     },
 
@@ -37,10 +37,10 @@ const nodeMap = {
         icon: "🦔",
         description: "原兽亚纲现存唯一的目，保留了卵生特征，具有独特的感官特化（电感受）及泌乳机制。",
         geologicalPeriod: "早古新世（约6600万年前）",
-        question: "根据外形特征选择：",
+        question: "卵生哺乳动物在古新世进一步特化，它们选择了不同的生存环境：",
         options: [
-            { text: "🦆 鸭嘴兽科：扁平的鸭嘴状吻部，水生生物", target: "ornithorhynchidae" },
-            { text: "🦔 针鼹科：覆盖尖刺，穴居或地上生活", target: "tachyglossidae" }
+            { text: "🦆 半水生，嘴部特化成扁平的鸭嘴状，电感应捕食", target: "ornithorhynchidae" },
+            { text: "🦔 陆生，全身覆盖棘刺，以蚂蚁为食", target: "tachyglossidae" }
         ]
     },
 
@@ -71,10 +71,10 @@ const nodeMap = {
         icon: "🐾",
         description: "胎生哺乳动物，包含有袋类和胎盘类，特征是具有乳头和旋转的肩胛骨。是现代哺乳动物的主要组成部分。",
         geologicalPeriod: "晚侏罗世（约1.6亿年前）",
-        question: "请根据幼崽出生后的发育方式选择：",
+        question: "你发展了胎生能力。幼崽出生时的发育程度，决定了两个主要方向：",
         options: [
-            { text: "🦘 有袋类：幼崽出生后需在育儿袋中继续发育", target: "metatheria" },
-            { text: "🐻 胎盘类：幼崽出生时已充分发育", target: "eutheria" }
+            { text: "🦘 幼崽极早期出生，在体外（育儿袋）继续发育", target: "metatheria" },
+            { text: "🐻 幼崽在母体内充分发育，出生后即较成熟", target: "eutheria" }
         ]
     },
 
@@ -85,10 +85,10 @@ const nodeMap = {
         icon: "🦘",
         description: "即有袋类及其化石近亲，特征是幼崽在发育早期出生，通常在育儿袋中完成后续发育。主要分布于澳洲和美洲。",
         geologicalPeriod: "早白垩世（约1.48亿年前）",
-        question: "选择分支：",
+        question: "早期有袋类随冈瓦纳古陆分裂，走向不同大陆。环境差异影响了它们的命运：",
         options: [
-            { text: "🌎 美洲有袋：分布在南美洲和北美洲", target: "ameridelphia" },
-            { text: "🦘 澳洲有袋：分布在澳大利亚及周边", target: "australidelphia" }
+            { text: "🌎 留在美洲，与不断兴起的胎盘类竞争", target: "ameridelphia" },
+            { text: "🏝️ 抵达长期隔离的澳大利亚，在缺少竞争者的环境中辐射演化", target: "australidelphia" }
         ]
     },
 
@@ -99,10 +99,10 @@ const nodeMap = {
         icon: "🌎",
         description: "包含美洲大陆的有袋类物种，是有袋类较早分化的一个分支，包括负鼠目等。",
         geologicalPeriod: "白垩纪晚期（约7000万年前）",
-        question: "选择目：",
+        question: "美洲有袋类面对竞争，选择了不同的小生境：",
         options: [
-            { text: "🐭 负鼠目：体型小，夜间活动，有育儿袋", target: "didelphimorphia" },
-            { text: "🦔 鼩负鼠目：食虫性，体型微小", target: "paucituberculata" }
+            { text: "🐭 小型夜行杂食者，以装死作为防御策略", target: "didelphimorphia" },
+            { text: "🦔 更特化的食虫者，退缩到安第斯高山环境", target: "paucituberculata" }
         ]
     },
 
@@ -113,11 +113,11 @@ const nodeMap = {
         icon: "🐭",
         description: "美洲有袋超目中形态最原始的基干类群，主要为树栖或半树栖，保留了有袋类的祖征。",
         geologicalPeriod: "古新世（约6600万年前）",
-        question: "选择科：",
+        question: "负鼠类的不同分支，适应了美洲多样的森林环境：",
         options: [
-            { text: "🟡 负鼠科：树栖为主，杂食，能装死防御", target: "didelphidae" },
-            { text: "🟢 小负鼠科：体型小，树栖，以水果昆虫为食", target: "caluromyidae" },
-            { text: "🔴 新袋鼠科：无育儿袋，栖息于安第斯高山", target: "caenolestidae" }
+            { text: "🟡 树栖杂食，遇敌装死", target: "didelphidae" },
+            { text: "🟢 更小体型，专精于树冠层水果昆虫", target: "caluromyidae" },
+            { text: "🔴 无育儿袋，适应安第斯高山冷湿环境", target: "caenolestidae" }
         ]
     },
 
@@ -158,9 +158,9 @@ const nodeMap = {
         icon: "🦔",
         description: "南美洲的孑遗类群，现生属种仅分布于安第斯高山环境，被称为生物地理学的“拉撒路类群”。",
         geologicalPeriod: "古新世中期（约6000万年前）",
-        question: "选择科：",
+        question: "鼩负鼠类退缩到安第斯山脉，成为孑遗物种：",
         options: [
-            { text: "🟡 鼩负鼠科：南美高山孑遗，以昆虫为食", target: "paucituberculidae" }
+            { text: "🟡 高海拔食虫者，南美特有", target: "paucituberculidae" }
         ]
     },
 
@@ -181,13 +181,13 @@ const nodeMap = {
         icon: "🦘",
         description: "包含所有澳洲有袋类及南美洲的微兽目，起源于冈瓦纳古陆的一次跨南极迁徙。",
         geologicalPeriod: "晚白垩世（约7500万年前）",
-        question: "选择分支：",
+        question: "在广阔的澳大利亚，有袋类占据了各种生态位。选择你的适应方向：",
         options: [
-            { text: "🐿️ 微兽目：单种孑遗，分布于南美洲", target: "microbiotheria" },
-            { text: "🦊 袋鼬目：澳洲食肉有袋类，体型多样", target: "dasyuromorphia" },
-            { text: "🐀 袋狸目：杂食性，挖洞生存", target: "peramelemorphia" },
-            { text: "🦇 袋鼹目：穴居生活，视觉退化", target: "notoryctemorphia" },
-            { text: "🐨 双门齿目：下颌有一对突出门齿", target: "diprotodontia" }
+            { text: "🐿️ 成为南美洲的孑遗见证者，与澳洲有袋类亲缘甚远", target: "microbiotheria" },
+            { text: "🦷 成为捕食者，发展锋利牙齿追捕猎物", target: "dasyuromorphia" },
+            { text: "🌾 成为地面杂食者，在森林和灌丛中觅食", target: "peramelemorphia" },
+            { text: "⛏️ 深入地下，用强壮前肢挖掘沙土", target: "notoryctemorphia" },
+            { text: "🌿 以植物为主食，并发展出多样化的取食方式", target: "diprotodontia" }
         ]
     },
 
@@ -209,11 +209,11 @@ const nodeMap = {
         icon: "🦊",
         description: "澳洲主要的食肉有袋类辐射，包含袋鼬、袋食蚁兽及已灭绝的袋狼。",
         geologicalPeriod: "早古新世（约6400万年前）",
-        question: "选择科：",
+        question: "食肉有袋类在澳洲成为顶级捕食者。不同家族采取了不同策略：",
         options: [
-            { text: "🟡 袋鼬科：夜行食肉，包括袋獾", target: "dasyuridae" },
-            { text: "🟢 袋食蚁兽科：专食白蚁，昼行性", target: "myrmecobiidae" },
-            { text: "🔴 袋狼科：已灭绝，背部有条纹", target: "thylacinidae" }
+            { text: "🟡 夜行伏击，包括著名的袋獾", target: "dasyuridae" },
+            { text: "🟢 特化为白天专食白蚁", target: "myrmecobiidae" },
+            { text: "🔴 曾为最大食肉有袋类，背部有条纹（已灭绝）", target: "thylacinidae" }
         ]
     },
 
@@ -254,11 +254,11 @@ const nodeMap = {
         icon: "🐀",
         description: "杂食性有袋类，起源于渐新世，随澳洲大陆北移及干旱化而辐射演化。代表物种：兔耳袋狸。",
         geologicalPeriod: "始新世中期（约4500万年前）",
-        question: "选择科：",
+        question: "袋狸类选择杂食，适应了澳洲逐渐干旱化的环境：",
         options: [
-            { text: "🟡 袋狸科：杂食性，分布于澳洲和新几内亚", target: "peramelidae" },
-            { text: "🟢 兔耳袋狸科：长耳跳跃，适应干旱", target: "thyacomyidae" },
-            { text: "🔴 豚足袋狸科：已灭绝，趾结构独特", target: "chaeropodidae" }
+            { text: "🟡 杂食性，适应多种栖息环境", target: "peramelidae" },
+            { text: "🟢 长耳跳跃，适应干旱内陆", target: "thyacomyidae" },
+            { text: "🔴 趾部特化（已灭绝）", target: "chaeropodidae" }
         ]
     },
 
@@ -310,11 +310,11 @@ const nodeMap = {
         icon: "🐨",
         description: "现存多样性最高的有袋类目，主要特征为下颌具有一对突出的门齿。",
         geologicalPeriod: "古新世晚期（约5500万年前）",
-        question: "选择亚目：",
+        question: "植食有袋类在澳洲大放异彩。它们选择了不同的移动和取食方式：",
         options: [
-            { text: "🐻 袋熊型亚目：树栖或地栖，掘洞生活", target: "vombatiformes" },
-            { text: "🦜 袋貂型亚目：树栖滑翔，拥有皮膜", target: "phalangeriformes" },
-            { text: "🦘 袋鼠型亚目：跳跃移动，强健后肢", target: "macropodiformes" }
+            { text: "⛏️ 地面或洞穴生活，身体粗壮，擅长挖掘", target: "vombatiformes" },
+            { text: "🌳 重返树冠层，在树枝间攀爬或滑翔", target: "phalangeriformes" },
+            { text: "🏃 在开阔草原发展出高效的后肢跳跃运动", target: "macropodiformes" }
         ]
     },
 
@@ -325,11 +325,11 @@ const nodeMap = {
         icon: "🐻",
         description: "包含树栖食叶的考拉和地栖掘土的袋熊，是双门齿目早期的生态位分化产物。",
         geologicalPeriod: "始新世晚期（约4000万年前）",
-        question: "选择科：",
+        question: "地面植食者进一步分化：",
         options: [
-            { text: "🟡 树袋熊科：食桉树叶，树栖生活", target: "phascolarctidae" },
-            { text: "🟢 袋熊科：掘洞，产立方体粪便", target: "vombatidae" },
-            { text: "🔴 双门齿科：已灭绝，体型巨大", target: "diprotodontidae" }
+            { text: "🌿 专门取食桉树叶，终生栖息树上", target: "phascolarctidae" },
+            { text: "⛏️ 地栖挖洞，以草为食，排出独特的立方体粪便", target: "vombatidae" },
+            { text: "🔴 巨大的双门齿兽（已灭绝）", target: "diprotodontidae" }
         ]
     },
 
@@ -370,15 +370,15 @@ const nodeMap = {
         icon: "🦜",
         description: "主要适应丛林树栖环境的有袋类，包含袋貂、袋鼯等，很多种类具有滑翔能力。",
         geologicalPeriod: "始新世中期（约4500万年前）",
-        question: "选择科：",
+        question: "树冠层的植食者演化出多种攀爬和取食技巧：",
         options: [
-            { text: "🟡 袋貂科：树栖夜行，尾可抓握", target: "phalangeridae" },
-            { text: "🟢 袋鼯科：滑翔有皮膜，食树液花蜜", target: "petauridae" },
-            { text: "🔴 蜜袋貂科：极小型，食花蜜", target: "acrobatidae" },
-            { text: "🔵 帚尾袋貂科：小型，食昆虫花蜜", target: "burramyidae" },
-            { text: "🟣 环尾袋貂科：尾可抓握，食树叶", target: "pseudocheiridae" },
-            { text: "⚪ 鳞尾袋貂科：滑翔，尾有鳞", target: "acrobatesidae" },
-            { text: "⚫ 长吻袋貂科：极长吻部，专食花蜜", target: "tarsipedidae" }
+            { text: "🟡 树栖夜行，尾可抓握", target: "phalangeridae" },
+            { text: "🟢 发展出皮膜在树间滑翔，食树液花蜜", target: "petauridae" },
+            { text: "🔴 极小型，专食花蜜", target: "acrobatidae" },
+            { text: "🔵 小型，尾帚状，食昆虫花蜜", target: "burramyidae" },
+            { text: "🟣 尾可抓握，食树叶", target: "pseudocheiridae" },
+            { text: "⚪ 滑翔，尾有鳞", target: "acrobatesidae" },
+            { text: "⚫ 极长吻部，专食花蜜", target: "tarsipedidae" }
         ]
     },
 
@@ -459,11 +459,11 @@ const nodeMap = {
         icon: "🦘",
         description: "包含袋鼠与鼠袋鼠，主要经历了从树栖/杂食向地栖/植食的转变，适应C4植物扩张。",
         geologicalPeriod: "渐新世（约3000万年前）",
-        question: "选择科：",
+        question: "跳跃植食者适应了开阔环境：",
         options: [
-            { text: "🟡 鼠袋鼠科：小型，掘食地下真菌", target: "potoroidae" },
-            { text: "🟢 袋鼠科：跳跃移动，强壮大后足", target: "macropodidae" },
-            { text: "🔴 麝袋鼠科：最原始袋鼠类，森林生活", target: "hypsiprymnodontidae" }
+            { text: "🟡 小型，掘食地下真菌", target: "potoroidae" },
+            { text: "🟢 后肢强健，跳跃移动，包括大袋鼠", target: "macropodidae" },
+            { text: "🔴 最原始袋鼠类，森林生活", target: "hypsiprymnodontidae" }
         ]
     },
 
@@ -504,12 +504,12 @@ const nodeMap = {
         icon: "🌍",
         description: "即胎盘类及其近亲，特征是具有复杂的胎盘结构，幼崽在母体内发育较完全。是现代哺乳动物中最繁盛的类群。",
         geologicalPeriod: "早白垩世（约1.48亿年前）",
-        question: "选择演化分支：",
+        question: "胎盘类在新生代迅速崛起。不同大陆的隔离演化产生了四大主线：",
         options: [
-            { text: "🦏 古老非洲起源，形态差异巨大（象、海牛等）", target: "afrotheria" },
-            { text: "🦔 南美特化，脊椎具有特殊附加关节", target: "xenarthra" },
-            { text: "🐵 包含灵长目和啮齿目，人类所属支系", target: "euarchontoglires" },
-            { text: "🦁 起源于劳亚古陆，包含食肉目和翼手目", target: "laurasiatheria" }
+            { text: "🦏 在非洲大陆长期独立演化", target: "afrotheria" },
+            { text: "🦔 在南美洲演化出特殊的骨骼关节", target: "xenarthra" },
+            { text: "🐵 发展出高度发达的感官和抓握能力", target: "euarchontoglires" },
+            { text: "🏃 快速扩张并占据多种捕食和奔跑生态位", target: "laurasiatheria" }
         ]
     },
 
@@ -520,14 +520,14 @@ const nodeMap = {
         icon: "🦏",
         description: "起源于非洲的古老分支，形态差异巨大但分子证据支持其单系性。包含长鼻目、海牛目、土豚等。",
         geologicalPeriod: "白垩纪晚期（约1.05亿年前）",
-        question: "选择目：",
+        question: "非洲兽类形态差异巨大，但分子证据显示它们有共同起源。选择它们的适应方向：",
         options: [
-            { text: "🐽 食虫类，仅存土豚一种，活化石", target: "tubulidentata" },
-            { text: "🐿️ 小型长鼻类，善于跳跃，非洲特有", target: "macroscelidea" },
-            { text: "🦔 非洲食虫类，包含金毛鼹和马岛猬", target: "afrosoricida" },
-            { text: "🐰 外形似兔，与大象亲缘关系最近", target: "hyracoidea" },
-            { text: "🐘 巨大体型，长鼻子（象鼻）为标志", target: "proboscidea" },
-            { text: "🐋 完全水生，草食性，儒艮和海牛", target: "sirenia" }
+            { text: "🐽 特化为食蚁，仅存土豚", target: "tubulidentata" },
+            { text: "🐿️ 小型长鼻，善于跳跃", target: "macroscelidea" },
+            { text: "🦔 非洲食虫类", target: "afrosoricida" },
+            { text: "🐰 外形似兔，与大象亲缘最近", target: "hyracoidea" },
+            { text: "🐘 巨大体型，长鼻取食", target: "proboscidea" },
+            { text: "🐋 完全水生，草食性", target: "sirenia" }
         ]
     },
 
@@ -560,9 +560,9 @@ const nodeMap = {
         icon: "🦔",
         description: "非洲兽总目下的食虫类群，包含形态各异的金毛鼹和马岛猬。马岛猬因分布于马达加斯加而特化。",
         geologicalPeriod: "晚白垩世（约7000万年前）",
-        question: "选择科：",
+        question: "非洲食虫类分化出不同地下和地面适应：",
         options: [
-            { text: "🦔 金色毛发，穴居生活，非洲特有", target: "chrysochloridae" },
+            { text: "🦔 金色毛发，穴居生活", target: "chrysochloridae" },
             { text: "🦔 马达加斯加特有，形态多样（似刺猬、老鼠、水栖）", target: "tenrecidae" }
         ]
     },
@@ -594,10 +594,10 @@ const nodeMap = {
         icon: "🐰",
         description: "特提斯兽类的姐妹群，外形似啮齿类，但亲缘关系接近大象，曾有极高的多样性。代表物种：岩蹄兔。",
         geologicalPeriod: "古新世中期（约6000万年前）",
-        question: "选择科：",
+        question: "蹄兔类曾高度多样化，现分化为不同栖息类型：",
         options: [
-            { text: "🐰 地栖，非洲/中东岩石地区，蹄状爪", target: "procaviidae" },
-            { text: "🏔️ 已灭绝，岩石环境，体型较大", target: "heterohyracidae" },
+            { text: "🐰 地栖，岩石环境，蹄状爪", target: "procaviidae" },
+            { text: "🏔️ 已灭绝，岩栖大型种", target: "heterohyracidae" },
             { text: "🌳 树栖，非洲森林生活", target: "dendrohyracidae" }
         ]
     },
@@ -639,12 +639,12 @@ const nodeMap = {
         icon: "🐘",
         description: "包含现生的大象及已灭绝的猛犸、乳齿象等，特征为延长的鼻子和巨大的体型。是陆地上体型最大的哺乳动物。",
         geologicalPeriod: "古新世晚期（约6000万年前）",
-        question: "选择科：",
+        question: "长鼻类演化出不同的体型和獠牙结构：",
         options: [
-            { text: "🐘 现生大象（非洲象、亚洲象）、长鼻、巨体型", target: "elephantidae" },
-            { text: "🦣 已灭绝，体型如猪，沼泽生活，原始长鼻", target: "moeritheriidae" },
-            { text: "🦣 已灭绝，长毛，冰期适应（猛犸象等）", target: "gomphotheriidae" },
-            { text: "🦣 已灭绝，下颌獠牙向下弯曲，巨大体型", target: "deinotheriidae" }
+            { text: "🐘 现生大象，长鼻巨体", target: "elephantidae" },
+            { text: "🦣 原始类型，体型如猪，沼泽生活", target: "moeritheriidae" },
+            { text: "🦣 长毛猛犸类，适应冰期", target: "gomphotheriidae" },
+            { text: "🦣 下颌獠牙向下弯曲的恐象类", target: "deinotheriidae" }
         ]
     },
 
@@ -695,9 +695,9 @@ const nodeMap = {
         icon: "🐋",
         description: "完全水生的草食性哺乳动物，包含儒艮和海牛，由于海草床的扩张而辐射。被认为是美人鱼传说的原型。",
         geologicalPeriod: "早古新世（约5500万年前）",
-        question: "选择科：",
+        question: "海牛类完全水生，尾巴形状适应不同水域：",
         options: [
-            { text: "🐋 圆尾，美洲淡水和沿海，草食性温顺", target: "trichechidae" },
+            { text: "🐋 圆尾，美洲淡水和沿海", target: "trichechidae" },
             { text: "🐋 叉尾，印度洋/太平洋，美人鱼原型", target: "dugongidae" }
         ]
     },
@@ -722,86 +722,6 @@ const nodeMap = {
         geologicalPeriod: "始新世（约5000万年前）"
     },
 
-    // 非洲猬目
-    afrosoricida: {
-        id: "afrosoricida",
-        name: "非洲猬目",
-        icon: "🦔",
-        description: "非洲兽总目下的食虫类群，包含形态各异的金毛鼹和马岛猬。马岛猬因分布于马达加斯加而特化。",
-        geologicalPeriod: "晚白垩世（约7000万年前）",
-        question: "选择科：",
-        options: [
-            { text: "🟡 马岛猬科", target: "tenrecidae" },
-            { text: "🟢 金毛鼹科", target: "chrysochloridae" }
-        ]
-    },
-
-    tenrecidae: {
-        id: "tenrecidae",
-        name: "马岛猬科",
-        isLeaf: true,
-        icon: "🦔",
-        description: "马岛猬科是马达加斯加岛的特有类群，外形多样，有些像刺猬，有些像老鼠或鼩鼱。由于长期隔离演化，形成了独特的生态位。",
-        keyTraits: ["马达加斯加特有", "多样外形"],
-        geologicalPeriod: "古新世（约6500万年前）"
-    },
-
-    chrysochloridae: {
-        id: "chrysochloridae",
-        name: "金毛鼹科",
-        isLeaf: true,
-        icon: "🦔",
-        description: "金毛鼹科是非洲南部的特有类群，适应地下生活，眼睛退化，毛发有金色光泽。以昆虫为食，善于挖掘。",
-        keyTraits: ["地下生活", "金毛发", "非洲南部"],
-        geologicalPeriod: "古新世（约6500万年前）"
-    },
-
-    // 象鼩目
-    macroscelidea: {
-        id: "macroscelidea",
-        name: "象鼩目",
-        icon: "🐿️",
-        description: "起源于非洲的小型食虫哺乳动物，具有长鼻和细长的四肢，是K-Pg灭绝后最早辐射的类群之一。",
-        geologicalPeriod: "古新世（约6000万年前）",
-        question: "选择科：",
-        options: [
-            { text: "🟡 象鼩科", target: "macroscelididae" }
-        ]
-    },
-
-    macroscelididae: {
-        id: "macroscelididae",
-        name: "象鼩科",
-        isLeaf: true,
-        icon: "🐿️",
-        description: "象鼩科是象鼩目唯一的科，包含多种象鼩，生活在非洲的草原和森林中。拥有长而灵活的鼻子用于寻找昆虫，后腿修长善于快速奔跑。",
-        keyTraits: ["长鼻", "善跑", "非洲特有"],
-        geologicalPeriod: "古新世（约6000万年前）"
-    },
-
-    // 蹄兔目
-    hyracoidea: {
-        id: "hyracoidea",
-        name: "蹄兔目",
-        icon: "🐰",
-        description: "特提斯兽类的姐妹群，外形似啮齿类，但亲缘关系接近大象，曾有极高的多样性。代表物种：岩蹄兔。",
-        geologicalPeriod: "古新世中期（约6000万年前）",
-        question: "选择科：",
-        options: [
-            { text: "🟡 蹄兔科", target: "procaviidae" }
-        ]
-    },
-
-    procaviidae: {
-        id: "procaviidae",
-        name: "蹄兔科",
-        isLeaf: true,
-        icon: "🐰",
-        description: "蹄兔科是蹄兔目唯一的科，包含多种蹄兔，生活在非洲和中东的岩石地区。外形像兔子但脚有蹄状爪，亲缘关系与大象和海牛更近。群居生活，善于攀爬岩石。",
-        keyTraits: ["蹄状爪", "岩栖", "与大象近缘"],
-        geologicalPeriod: "古新世中期（约6000万年前）"
-    },
-
     // 异关节总目
     xenarthra: {
         id: "xenarthra",
@@ -809,10 +729,10 @@ const nodeMap = {
         icon: "🦔",
         description: "南美洲演化的特有类群，脊椎具有特殊的附加关节（异关节），包含披毛目和有甲目。",
         geologicalPeriod: "白垩纪晚期（约1亿年前）",
-        question: "选择目：",
+        question: "南美洲的异关节类发展了独特的脊椎附加关节。两大分支：",
         options: [
-            { text: "🦔 身披骨质甲壳，可卷曲成球（犰狳等）", target: "cingulata" },
-            { text: "🐻 无齿、食蚁、长舌（食蚁兽和树懒）", target: "pilosa" }
+            { text: "🛡️ 身披骨质甲壳，可卷曲成球", target: "cingulata" },
+            { text: "🐛 无齿，食蚁，长舌", target: "pilosa" }
         ]
     },
 
@@ -823,10 +743,10 @@ const nodeMap = {
         icon: "🦔",
         description: "身披骨质甲壳的贫齿类动物，包含犰狳科和倭犰狳科。可以卷曲成球保护自己。",
         geologicalPeriod: "始新世中期（约4500万年前）",
-        question: "选择科：",
+        question: "犰狳类的甲壳结构不同：",
         options: [
-            { text: "🦔 分节甲壳，可蜷曲成球防御，美洲分布", target: "dasypodidae" },
-            { text: "🦔 小型犰狳，甲壳结构特殊，美洲特有", target: "chlamyphoridae" }
+            { text: "🦔 分节甲壳，可蜷曲成球防御", target: "dasypodidae" },
+            { text: "🦔 小型，甲壳结构特殊", target: "chlamyphoridae" }
         ]
     },
 
@@ -857,10 +777,10 @@ const nodeMap = {
         icon: "🐻",
         description: "包含食蚁兽和树懒，是南美洲独立演化的特有类群。",
         geologicalPeriod: "白垩纪晚期（约5800万年前）",
-        question: "选择亚目：",
+        question: "披毛目分化为地面食蚁和树栖食叶两大方向：",
         options: [
-            { text: "🐛 管状吻部，无齿，专食白蚁和蚂蚁", target: "vermilingua" },
-            { text: "🌿 树栖，极慢代谢，食叶（树懒）", target: "folivora" }
+            { text: "🐛 管状吻部，无齿，专食白蚁蚂蚁", target: "vermilingua" },
+            { text: "🌿 树栖，极慢代谢，食叶", target: "folivora" }
         ]
     },
 
@@ -871,10 +791,10 @@ const nodeMap = {
         icon: "🐛",
         description: "即食蚁兽类，特征为特化的管状吻部和缺乏牙齿，专食白蚁和蚂蚁。代表物种：大食蚁兽。",
         geologicalPeriod: "始新世晚期（约3800万年前）",
-        question: "选择科：",
+        question: "食蚁兽的大小和栖息地不同：",
         options: [
-            { text: "🐛 大型，长舌，强壮前爪，非美洲分布", target: "myrmecophagidae" },
-            { text: "🐛 小型，树栖，中美洲/南美洲森林", target: "cyclopedidae" }
+            { text: "🐛 大型，地面生活，强前爪", target: "myrmecophagidae" },
+            { text: "🐛 小型，树栖", target: "cyclopedidae" }
         ]
     },
 
@@ -905,10 +825,10 @@ const nodeMap = {
         icon: "🌿",
         description: "即树懒类，现生种类均为树栖，历史上曾包含巨大的地懒，具有趋同演化的悬挂习性。代表物种：三趾树懒。",
         geologicalPeriod: "渐新世（约3000万年前）",
-        question: "选择科：",
+        question: "树懒的趾数和移动速度有差异：",
         options: [
-            { text: "🌿 三趾，极慢代谢，毛发长绿藻，昼夜均可活动", target: "bradypodidae" },
-            { text: "🌿 二趾，体型稍大，移动稍快，树栖食叶", target: "megalonychidae" }
+            { text: "🌿 三趾，极慢代谢，毛发长绿藻", target: "bradypodidae" },
+            { text: "🌿 二趾，体型稍大，移动稍快", target: "megalonychidae" }
         ]
     },
 
@@ -939,13 +859,13 @@ const nodeMap = {
         icon: "🐵",
         description: "包含灵长目、啮齿目、兔形目等，是人类所属的演化支系。物种数量众多，生态多样。",
         geologicalPeriod: "白垩纪晚期（约9500万年前）",
-        question: "选择目：",
+        question: "这一支系强化了感知、学习和环境适应能力：",
         options: [
-            { text: "🐿️ 树鼩目：似松鼠、树栖、与灵长类亲缘较近", target: "scandentia" },
-            { text: "🦇 皮翼目：滑翔哺乳动物、具有宽大皮膜", target: "dermoptera" },
-            { text: "🐵 灵长目：立体视觉、灵活手指、高度智慧", target: "primates" },
-            { text: "🐁 啮齿目：凿状门齿、种类最多、适应力强", target: "rodentia" },
-            { text: "🐰 兔形目：双上门齿、后一对较小、草食性", target: "lagomorpha" }
+            { text: "🌳 保留祖先特征，灵活树栖", target: "scandentia" },
+            { text: "🪂 发展巨大皮膜，在树间滑翔", target: "dermoptera" },
+            { text: "👁️ 强化立体视觉和抓握能力", target: "primates" },
+            { text: "🦷 利用持续生长的门齿征服各种环境", target: "rodentia" },
+            { text: "🌾 高效啃食植物，快速逃逸", target: "lagomorpha" }
         ]
     },
 
@@ -956,10 +876,10 @@ const nodeMap = {
         icon: "🐿️",
         description: "外形似松鼠但与灵长目亲缘关系较近的小型哺乳动物，保留了许多祖征。常用于医学研究。",
         geologicalPeriod: "古新世晚期（约6500万年前）",
-        question: "选择科：",
+        question: "树鼩类的尾巴结构不同：",
         options: [
-            { text: "🟡 树鼩科", target: "tupaiidae" },
-            { text: "🟢 笔尾树鼩科", target: "ptilocercidae" }
+            { text: "🟡 普通树鼩", target: "tupaiidae" },
+            { text: "🟢 笔尾树鼩，尾端有羽毛状毛", target: "ptilocercidae" }
         ]
     },
 
@@ -990,9 +910,9 @@ const nodeMap = {
         icon: "🦇",
         description: "俗称鼯猴，具有发达的皮膜用于滑翔，是灵长目最近的现生姐妹群。代表物种：菲律宾鼯猴。",
         geologicalPeriod: "中新世（约1500万年前）",
-        question: "选择科：",
+        question: "皮翼目的滑翔适应：",
         options: [
-            { text: "🟡 鼯猴科", target: "cynocephalidae" }
+            { text: "🟡 宽大皮膜，树间滑翔", target: "cynocephalidae" }
         ]
     },
 
@@ -1013,10 +933,10 @@ const nodeMap = {
         icon: "🐵",
         description: "包括原猴、猴、猿和人类，通常具有发达的大脑、立体视觉和灵活的手指。是智慧最高的哺乳动物。",
         geologicalPeriod: "白垩纪晚期（约7000万年前）",
-        question: "选择亚目：",
+        question: "灵长目感知世界的方式产生分化：",
         options: [
-            { text: "🐵 原猴亚目：湿润鼻部、对生拇指、马达加斯加和非洲分布", target: "strepsirrhini" },
-            { text: "🦍 类人猿亚目：干鼻、发达大脑、无尾或短尾", target: "haplorhini" }
+            { text: "🐵 保留湿润鼻部，依赖嗅觉", target: "strepsirrhini" },
+            { text: "🦍 发展干鼻和更发达的大脑", target: "haplorhini" }
         ]
     },
 
@@ -1027,11 +947,11 @@ const nodeMap = {
         icon: "🐵",
         description: "较为原始的灵长类分支，包含狐猴、懒猴等，主要分布于马达加斯加和非洲。具有湿润的鼻部和对生拇指。",
         geologicalPeriod: "古新世（约6500万年前）",
-        question: "选择下目：",
+        question: "原猴在不同大陆和生境中分化：",
         options: [
-            { text: "🐵 狐猴下目：马达加斯加特有、形态多样、树栖为主", target: "lemuriformes" },
-            { text: "🦥 懒猴下目：夜行性、动作缓慢、非洲和亚洲分布", target: "lorisiformes" },
-            { text: "🖐️ 指猴下目：超长中指、敲击回声定位、马达加斯加特有", target: "chiromyiformes" }
+            { text: "🐵 马达加斯加特有的多样化辐射", target: "lemuriformes" },
+            { text: "🦥 非洲和亚洲的夜行慢速类型", target: "lorisiformes" },
+            { text: "🖐️ 特化手指敲击取食", target: "chiromyiformes" }
         ]
     },
 
@@ -1041,13 +961,13 @@ const nodeMap = {
         icon: "🐵",
         description: "马达加斯加特有的灵长类辐射支系，形态和生态习性高度多样化。",
         geologicalPeriod: "始新世（约5000万年前）",
-        question: "选择科：",
+        question: "狐猴在马达加斯加占据多样生态位：",
         options: [
-            { text: "🟡 狐猴科：环尾狐猴、日行性、群居、跳跃能力强", target: "lemuridae" },
-            { text: "🟢 鼠狐猴科：体型最小、夜行性、大眼睛适应暗光", target: "cheirogaleidae" },
-            { text: "🔴 大狐猴科：最大狐猴、后肢长、树栖跳跃、大叫声", target: "indriidae" },
-            { text: "🔵 冕狐猴科：冠毛、树栖跳跃、毛色华丽", target: "propithecidae" },
-            { text: "🟣 鼬狐猴科：夜行性、叶食为主、干燥森林适应", target: "lepilemuridae" }
+            { text: "🟡 环尾狐猴类，日行性，群居", target: "lemuridae" },
+            { text: "🟢 最小型的夜行狐猴", target: "cheirogaleidae" },
+            { text: "🔴 大型跳跃狐猴", target: "indriidae" },
+            { text: "🔵 冠毛狐猴类", target: "propithecidae" },
+            { text: "🟣 夜行叶食狐猴", target: "lepilemuridae" }
         ]
     },
 
@@ -1107,10 +1027,10 @@ const nodeMap = {
         icon: "🦥",
         description: "分布于非洲和亚洲的夜行性灵长类，包含懒猴和婴猴。",
         geologicalPeriod: "始新世（约4000万年前）",
-        question: "选择科：",
+        question: "懒猴类的移动速度和防御策略不同：",
         options: [
-            { text: "🟡 懒猴科：动作极慢、树栖、有些种类有剧毒", target: "lorisidae" },
-            { text: "🟢 婴猴科：小型活跃、夜行、善跳跃、大眼睛", target: "galagidae" }
+            { text: "🟡 极慢速树栖，部分有毒", target: "lorisidae" },
+            { text: "🟢 小型活跃，夜行善跳", target: "galagidae" }
         ]
     },
 
@@ -1140,9 +1060,9 @@ const nodeMap = {
         icon: "🖐️",
         description: "仅包含指猴科，具有特化的手指用于敲击回声定位取食。",
         geologicalPeriod: "始新世（约5000万年前）",
-        question: "选择科：",
+        question: "指猴的特化适应：",
         options: [
-            { text: "🟡 指猴科：超长中指、敲击回声定位、掏取树洞昆虫", target: "daubentoniidae" }
+            { text: "🟡 超长中指，敲击回声定位，掏取树洞昆虫", target: "daubentoniidae" }
         ]
     },
 
@@ -1163,10 +1083,10 @@ const nodeMap = {
         icon: "🦍",
         description: "类人猿是灵长目中更进化的分支，具有更发达的大脑、更小或缺失的尾巴，以及更复杂的社会行为。",
         geologicalPeriod: "晚白垩世（约6500万年前）",
-        question: "选择次目：",
+        question: "类人猿的鼻孔朝向和分布区域不同：",
         options: [
-            { text: "🐵 阔鼻猴次目：新世界猴、宽鼻孔、卷尾抓握、南美洲分布", target: "platyrrhini" },
-            { text: "🦍 狭鼻猴次目：窄鼻孔向下、旧世界猴和猿、非洲和亚洲", target: "catarrhini" }
+            { text: "🐵 新世界猴：宽鼻孔，卷尾抓握", target: "platyrrhini" },
+            { text: "🦍 旧世界猴和猿：窄鼻孔向下", target: "catarrhini" }
         ]
     },
 
@@ -1177,9 +1097,9 @@ const nodeMap = {
         icon: "🐵",
         description: "分布于南美洲的新世界猴，鼻孔宽阔向两侧分开。拥有卷尾用于抓握，生活在热带雨林中。",
         geologicalPeriod: "始新世（约3500万年前）",
-        question: "选择总科：",
+        question: "新世界猴演化出多种树栖适应：",
         options: [
-            { text: "🐵 卷尾猴总科：新世界猴代表、卷尾抓握、树栖为主", target: "ceboidea" }
+            { text: "🐵 卷尾猴总科", target: "ceboidea" }
         ]
     },
 
@@ -1189,13 +1109,13 @@ const nodeMap = {
         icon: "🐵",
         description: "新世界猴的主要类群，分布于中美洲和南美洲。",
         geologicalPeriod: "始新世（约3500万年前）",
-        question: "选择科：",
+        question: "新世界猴的不同科擅长不同技能：",
         options: [
-            { text: "🟡 卷尾猴科：高智商、会使用工具、树栖活跃", target: "cebidae" },
-            { text: "🟢 蜘蛛猴科：能抓握尾巴第五只手、吼猴叫声响亮", target: "atelidae" },
-            { text: "🔴 僧面猴科：独特面部、特化牙齿、食果为主", target: "pitheciidae" },
-            { text: "🔵 夜猴科：唯一夜行性类人猿、巨大眼睛、无色彩视觉", target: "aotidae" },
-            { text: "🟣 狨科：体型最小、双胞胎常见、共同抚养幼崽", target: "callitrichidae" }
+            { text: "🟡 高智商，会使用工具", target: "cebidae" },
+            { text: "🟢 第五只手般的抓握尾", target: "atelidae" },
+            { text: "🔴 独特面部，特化食果", target: "pitheciidae" },
+            { text: "🔵 唯一夜行类人猿，巨大眼睛", target: "aotidae" },
+            { text: "🟣 体型最小，共同抚养幼崽", target: "callitrichidae" }
         ]
     },
 
@@ -1256,10 +1176,10 @@ const nodeMap = {
         icon: "🐵",
         description: "狭鼻猴的鼻孔向下开，分布于非洲和亚洲。其中包括我们人类所属的人科，是整个动物界中智慧最高的类群。",
         geologicalPeriod: "渐新世（约3000万年前）",
-        question: "选择超科：",
+        question: "旧世界猴和猿分化出不同消化和社会策略：",
         options: [
-            { text: "🐒 猴超科：旧世界猴、颊囊储存食物、臀胼胝", target: "cercopithecoidea" },
-            { text: "🦍 人猿超科：类人猿、高智慧、无尾或短尾", target: "hominoidea" }
+            { text: "🐒 旧世界猴：颊囊存食，臀胼胝", target: "cercopithecoidea" },
+            { text: "🦍 类人猿：高智慧，无尾", target: "hominoidea" }
         ]
     },
 
@@ -1270,10 +1190,10 @@ const nodeMap = {
         icon: "🐒",
         description: "旧世界猴的代表，包含猕猴、狒狒等。分布于非洲和亚洲，具有颊囊可用于储存食物，臀部有胼胝。",
         geologicalPeriod: "渐新世晚期（约2500万年前）",
-        question: "选择科：",
+        question: "旧世界猴的食性和消化系统分化：",
         options: [
-            { text: "🟡 猴科：颊囊、臀胼胝、杂食、群居猕猴狒狒", target: "cercopithecidae" },
-            { text: "🟢 疣猴科：无颊囊、叶食为主、特化消化系统", target: "colobidae" }
+            { text: "🟡 杂食，有颊囊", target: "cercopithecidae" },
+            { text: "🟢 叶食为主，特化胃，无颊囊", target: "colobidae" }
         ]
     },
 
@@ -1304,10 +1224,10 @@ const nodeMap = {
         icon: "🦍",
         description: "人猿超科是类人猿中最高等的类群，包括长臂猿科和人科（猩猩、大猩猩、黑猩猩、人类）。",
         geologicalPeriod: "渐新世晚期（约2500万年前）",
-        question: "选择科：",
+        question: "类人猿的运动和社会结构不同：",
         options: [
-            { text: "🦧 长臂猿科：臂跃运动、长臂、独特歌声、一夫一妻", target: "hylobatidae" },
-            { text: "🦍 人科：无尾、高智慧、社会行为复杂、工具使用", target: "hominidae" }
+            { text: "🦧 臂跃运动，长臂，一夫一妻", target: "hylobatidae" },
+            { text: "🦍 更大体型，复杂社会", target: "hominidae" }
         ]
     },
 
@@ -1329,10 +1249,10 @@ const nodeMap = {
         icon: "🦍",
         description: "人科包括猩猩、大猩猩、黑猩猩和人类。人类是唯一存活至今的人类物种，创造了灿烂的文明。",
         geologicalPeriod: "中新世中期（约1500万年前）",
-        question: "选择亚科：",
+        question: "人科的分布和栖息地偏好不同：",
         options: [
-            { text: "🦧 猩猩亚科：红毛、树栖为主、亚洲分布、智慧较高", target: "ponginae" },
-            { text: "🦍 人亚科：与人类亲缘最近、黑猩猩和人类所在", target: "homininae" }
+            { text: "🦧 亚洲，树栖为主，红毛", target: "ponginae" },
+            { text: "🦍 非洲，与人类亲缘最近", target: "homininae" }
         ]
     },
 
@@ -1354,10 +1274,10 @@ const nodeMap = {
         icon: "🔥",
         description: "人亚科包括大猩猩、黑猩猩和人类，是与人类亲缘关系最近的类群。在约600-700万年前人族与大猩猩族分离。",
         geologicalPeriod: "中新世晚期（约800万年前）",
-        question: "选择族：",
+        question: "人亚科中，体型和社会结构分化：",
         options: [
-            { text: "🦍 大猩猩族：巨大体型、银背领导、草食为主、群居", target: "gorillini" },
-            { text: "🧑 人族：直立行走、语言能力、工具使用、文明创造", target: "hominini" }
+            { text: "🦍 巨大体型，银背领导", target: "gorillini" },
+            { text: "🧑 直立行走，语言，工具使用", target: "hominini" }
         ]
     },
 
@@ -1390,12 +1310,12 @@ const nodeMap = {
         icon: "🐁",
         description: "哺乳动物中种类最多的一个目，特征是上下颌各有一对终生生长的凿状门齿，需要通过啃咬来磨短。",
         geologicalPeriod: "古新世晚期（约5600万年前）",
-        question: "选择亚目：",
+        question: "啮齿类利用不断生长的门齿，适应了几乎所有陆地环境。四大分支：",
         options: [
-            { text: "🐿️ 松鼠形亚目：树栖或地栖、长毛大尾巴、善跳跃", target: "sciuromorpha" },
-            { text: "🦫 河狸形亚目：筑坝高手、扁宽尾巴、特化颌骨", target: "castorimorpha" },
-            { text: "🐁 鼠形亚目：种类最多、适应力强、全球分布", target: "myomorpha" },
-            { text: "🦔 豪猪形亚目：特化咬肌、旧世界豪猪、南美豚鼠类", target: "hystricomorpha" }
+            { text: "🐿️ 树栖或地栖，蓬松大尾", target: "sciuromorpha" },
+            { text: "🦫 筑坝，特化颌骨", target: "castorimorpha" },
+            { text: "🐁 种类最多，适应力最强", target: "myomorpha" },
+            { text: "🦔 尖刺防御，南美特化", target: "hystricomorpha" }
         ]
     },
 
@@ -1405,11 +1325,11 @@ const nodeMap = {
         icon: "🐿️",
         description: "包含松鼠、花栗鼠、土拨鼠、睡鼠等。适应树栖、地栖等多种生境。",
         geologicalPeriod: "始新世（约5000万年前）",
-        question: "选择科：",
+        question: "松鼠形类的主要生态类型：",
         options: [
-            { text: "🟡 松鼠科：树栖地栖均有、蓬松大尾、冬季储食", target: "sciuridae" },
-            { text: "🟢 睡鼠科：长冬眠9个月、树栖、夜行、水果坚果", target: "gliridae" },
-            { text: "🔴 山河狸科：最原始啮齿类、粗壮洞穴、北美森林", target: "aplodontiidae" }
+            { text: "🟡 树栖地栖，蓬松大尾，冬季储食", target: "sciuridae" },
+            { text: "🟢 长冬眠可达9个月，树栖夜行", target: "gliridae" },
+            { text: "🔴 最原始现存啮齿类，粗壮洞穴生活", target: "aplodontiidae" }
         ]
     },
 
@@ -1449,11 +1369,11 @@ const nodeMap = {
         icon: "🦫",
         description: "包含河狸、囊鼠和异鼠，具有独特的颌骨肌肉结构。",
         geologicalPeriod: "始新世（约4800万年前）",
-        question: "选择科：",
+        question: "河狸形类的生活环境不同：",
         options: [
-            { text: "🟡 河狸科：筑坝建造木屋、大扁平尾、生态工程师", target: "castoridae" },
-            { text: "🟢 囊鼠科：颊囊储存食物、地下穴居、美洲分布", target: "geomyidae" },
-            { text: "🔴 异鼠科：跳跃适应沙漠、长后肢、不饮水仅从食物获取", target: "heteromyidae" }
+            { text: "🟡 半水生，筑坝建造木屋", target: "castoridae" },
+            { text: "🟢 地下穴居，颊囊储存食物", target: "geomyidae" },
+            { text: "🔴 沙漠跳跃适应，不饮水仅从食物获取水分", target: "heteromyidae" }
         ]
     },
 
@@ -1493,10 +1413,10 @@ const nodeMap = {
         icon: "🐁",
         description: "包含鼠总科和跳鼠总科，拥有哺乳动物中1/4的物种，适应性极强。",
         geologicalPeriod: "始新世（约5000万年前）",
-        question: "选择总科：",
+        question: "鼠形类中，后肢长度和运动方式不同：",
         options: [
-            { text: "🟡 鼠总科：种类最多、全球分布、伴人物种", target: "muroidea" },
-            { text: "🟢 跳鼠总科：长后肢跳跃、沙漠干旱适应", target: "dipodoidea" }
+            { text: "🟡 典型鼠类，适应多种环境", target: "muroidea" },
+            { text: "🟢 长后肢跳跃，适应干旱", target: "dipodoidea" }
         ]
     },
 
@@ -1506,19 +1426,18 @@ const nodeMap = {
         icon: "🐁",
         description: "包含仓鼠、鼠科等，在中新世经历了爆发式辐射，遍布全球。",
         geologicalPeriod: "渐新世（约3500万年前）",
-        question: "选择科：",
+        question: "鼠总科的不同科适应了从地下到树冠的多种生境：",
         options: [
-            { text: "🟡 鼠科：大鼠小鼠、伴人分布、实验动物", target: "muridae" },
-            { text: "🟢 仓鼠科：颊囊储存食物、宠物仓鼠、旅鼠迁徙", target: "cricetidae" },
-            { text: "🔴 刺山鼠科：刺状毛、印度东南亚分布", target: "platacanthomyidae" },
-            { text: "🔵 瞎鼠科：地下穴居、眼睛退化、欧亚非分布", target: "spalacidae" },
-            { text: "🟣 竹鼠科：竹子为主食、亚洲分布、体型较大", target: "rhizomyidae" },
-            { text: "⚪ 沙鼠科：沙漠适应、长尾巴、跳跃能力", target: "gerbillidae" },
-            { text: "⚫ 林鼠科：非洲马达加斯加、多样性高", target: "nesomyidae" },
-            { text: "🔵 冠鼠科：冠状毛、膨胀身体防御、非洲", target: "lophiomyidae" },
-            { text: "🔴 刺毛鼠科：刺状毛、印度东南亚", target: "platacanthomyidae" },
-            { text: "🟢 鳞尾鼠科：尾部有鳞、非洲树栖滑翔", target: "anomaluridae" },
-            { text: "🟡 跳兔科：兔形、后肢长跳跃、非洲", target: "pedetidae" }
+            { text: "🟡 伴人生活，成为重要实验动物", target: "muridae" },
+            { text: "🟢 有颊囊，常见宠物仓鼠", target: "cricetidae" },
+            { text: "🔴 刺状毛，印度东南亚分布", target: "platacanthomyidae" },
+            { text: "🔵 地下穴居，眼睛退化", target: "spalacidae" },
+            { text: "🟣 以竹子为主食，亚洲分布", target: "rhizomyidae" },
+            { text: "⚪ 沙漠适应，长尾巴跳跃", target: "gerbillidae" },
+            { text: "⚫ 非洲马达加斯加，多样性高", target: "nesomyidae" },
+            { text: "🔵 冠状毛，膨胀身体防御", target: "lophiomyidae" },
+            { text: "🟢 尾部有鳞，非洲树栖滑翔", target: "anomaluridae" },
+            { text: "🟡 后肢长跳跃，外形似兔", target: "pedetidae" }
         ]
     },
 
@@ -1628,10 +1547,10 @@ const nodeMap = {
         icon: "🦘",
         description: "跳鼠总科以跳鼠为代表，多具有延长的后肢，适应跳跃运动。生活在干旱和半干旱地区。",
         geologicalPeriod: "始新世（约3500万年前）",
-        question: "选择科：",
+        question: "跳鼠总科中，栖息地湿润程度不同：",
         options: [
-            { text: "🟡 跳鼠科：极长后肢、沙漠草原、欧亚北非", target: "dipodidae" },
-            { text: "🟢 林跳鼠科：森林湿地、长后肢、北美欧亚", target: "zapodidae" }
+            { text: "🟡 极长后肢，干旱沙漠草原", target: "dipodidae" },
+            { text: "🟢 长后肢，森林湿地环境", target: "zapodidae" }
         ]
     },
 
@@ -1661,12 +1580,12 @@ const nodeMap = {
         icon: "🦔",
         description: "包含梳趾鼠、豪猪及南美豚鼠类，具有特化的咬肌结构。",
         geologicalPeriod: "始新世（约4800万年前）",
-        question: "选择总科：",
+        question: "豪猪形类的地理分布和防御策略不同：",
         options: [
-            { text: "🟡 豪猪总科：尖刺防御、旧世界豪猪", target: "hystricoidea" },
-            { text: "🟢 豚鼠总科：南美特化、水豚最大、毛丝鼠珍贵毛皮", target: "cavioidea" },
-            { text: "🔴 梳趾鼠总科：梳状趾、非洲亚洲干旱", target: "ctenodactyloidea" },
-            { text: "🔵 岩鼠总科：岩石环境、非洲", target: "petromuroidea" }
+            { text: "🟡 尖刺防御，旧世界豪猪", target: "hystricoidea" },
+            { text: "🟢 南美特化，包括最大啮齿类水豚", target: "cavioidea" },
+            { text: "🔴 梳状趾，非洲亚洲干旱环境", target: "ctenodactyloidea" },
+            { text: "🔵 身体扁平，适应岩石环境", target: "petromuroidea" }
         ]
     },
 
@@ -1676,9 +1595,9 @@ const nodeMap = {
         icon: "🦔",
         description: "梳趾鼠总科包括梳趾鼠，是非洲和亚洲的小型啮齿类，有梳状的趾。",
         geologicalPeriod: "始新世（约4800万年前）",
-        question: "选择科：",
+        question: "梳趾鼠的适应特征：",
         options: [
-            { text: "🟡 梳趾鼠科：梳状趾、干旱适应、非洲亚洲", target: "ctenodactylidae" }
+            { text: "🟡 梳状趾，干旱适应", target: "ctenodactylidae" }
         ]
     },
 
@@ -1698,9 +1617,9 @@ const nodeMap = {
         icon: "🏔️",
         description: "岩鼠总科包括岩鼠，是非洲的小型啮齿类，适应岩石环境。",
         geologicalPeriod: "始新世（约4800万年前）",
-        question: "选择科：",
+        question: "岩鼠的适应特征：",
         options: [
-            { text: "🟡 岩鼠科：身体扁平、岩石环境、非洲", target: "petromuridae" }
+            { text: "🟡 身体扁平，适应岩石裂隙", target: "petromuridae" }
         ]
     },
 
@@ -1720,10 +1639,10 @@ const nodeMap = {
         icon: "🦔",
         description: "豪猪总科包括豪猪，具有保护性的尖刺。旧大陆和新大陆的豪猪是独立演化的趋同进化案例。",
         geologicalPeriod: "始新世（约4800万年前）",
-        question: "选择科：",
+        question: "豪猪的刺结构和栖息地不同：",
         options: [
-            { text: "🟡 豪猪科：长尖刺、旧大陆、非洲亚洲欧洲、地栖", target: "hystricidae" },
-            { text: "🟢 美洲豪猪科：短刺灵活、新大陆、树栖地栖", target: "erethizontidae" }
+            { text: "🟡 长而硬的刺，旧大陆地栖", target: "hystricidae" },
+            { text: "🟢 较短而灵活的刺，新大陆树栖", target: "erethizontidae" }
         ]
     },
 
@@ -1753,18 +1672,18 @@ const nodeMap = {
         icon: "🐹",
         description: "豚鼠总科包括豚鼠（荷兰猪）、水豚、毛丝鼠等南美特化类群。水豚是最大的啮齿类，毛丝鼠是珍贵毛皮动物。",
         geologicalPeriod: "渐新世（约4200万年前）",
-        question: "选择科：",
+        question: "南美豚鼠类占据了从水边到安第斯高山的多种生态位：",
         options: [
-            { text: "🟡 豚鼠科：南美特有、宠物实验动物、草食", target: "caviidae" },
-            { text: "🟢 毛丝鼠科：世界最浓密毛皮、安第斯山脉、宠物", target: "chinchillidae" },
-            { text: "🔴 水豚科：最大啮齿类、半水栖、南美河流、草食", target: "hydrochoeridae" },
-            { text: "🔵 刺豚鼠科：善奔跑、种子传播、南美特有", target: "dasyproctidae" },
-            { text: "🟣 长尾豚鼠科：大型、南美森林、长尾", target: "dinomyidae" },
-            { text: "⚪ 棘鼠科：有刺、树栖地栖、南美", target: "echimyidae" },
-            { text: "⚫ 八齿鼠科：八颗臼齿、南美、宠物", target: "octodontidae" },
-            { text: "🔴 梳鼠科：穴居、南美、植物为主", target: "cuniculidae" },
-            { text: "🔵 兔豚鼠科：善奔跑、兔形、南美", target: "agoutidae" },
-            { text: "🟡 绒鼠科：浓密毛、安第斯山脉、南美", target: "abrocomidae" }
+            { text: "🟡 小型群居，成为常见宠物和实验动物", target: "caviidae" },
+            { text: "🟢 拥有世界最浓密毛皮，安第斯山脉", target: "chinchillidae" },
+            { text: "🔴 现存最大啮齿类，半水栖，草食", target: "hydrochoeridae" },
+            { text: "🔵 善奔跑，作为种子传播者", target: "dasyproctidae" },
+            { text: "🟣 大型森林种类，长尾", target: "dinomyidae" },
+            { text: "⚪ 有刺，树栖或地栖", target: "echimyidae" },
+            { text: "⚫ 八颗臼齿，成为常见宠物", target: "octodontidae" },
+            { text: "🔴 穴居，南美分布", target: "cuniculidae" },
+            { text: "🔵 善奔跑，外形似兔", target: "agoutidae" },
+            { text: "🟡 浓密毛，安第斯山脉", target: "abrocomidae" }
         ]
     },
 
@@ -1875,12 +1794,10 @@ const nodeMap = {
         icon: "🐰",
         description: "包含兔子和鼠兔，具有两对上门齿，后一对较小。曾被归入啮齿目，但现在单独成目。",
         geologicalPeriod: "古新世（约5500万年前）",
-        question: "选择科：",
+        question: "兔形目的耳朵长度和栖息地不同：",
         options: [
-            { text: "🟡 兔科：长耳朵跳跃、高繁殖力、草食为主", target: "leporidae" },
-            { text: "🟢 鼠兔科：无尾短耳、山地寒冷、洞穴储存食物", target: "ochotonidae" },
-            { text: "🔴 草兔科：长腿奔跑、田野草原", target: "Leporidae" },
-            { text: "🔵 野兔科：野兔、敏捷奔跑", target: "Leporidae" }
+            { text: "🟡 长耳跳跃，高繁殖力，草食为主", target: "leporidae" },
+            { text: "🟢 无尾短耳，山地寒冷环境，洞穴储存食物", target: "ochotonidae" }
         ]
     },
 
@@ -1911,14 +1828,14 @@ const nodeMap = {
         icon: "🦁",
         description: "起源于劳亚古陆的庞大支系，包含食肉目、鲸偶蹄目、翼手目等，生态位极其多样。是哺乳动物中最大的总目。",
         geologicalPeriod: "白垩纪晚期（约9500万年前）",
-        question: "选择目：",
+        question: "劳亚兽总目快速扩张，占据了飞行、奔跑、游泳等多种生态位：",
         options: [
-            { text: "🦇 翼手目：唯一真正能飞行的哺乳动物，前肢演化为翼", target: "chiroptera" },
-            { text: "🦔 真盲缺目：原始食虫类，包含刺猬、鼩鼱、鼹鼠", target: "eulipotyphla" },
-            { text: "🐴 奇蹄目：第三趾发达，中大型草食有蹄类", target: "perissodactyla" },
-            { text: "🐮 偶蹄目：第三四趾同等发达，包含鲸类等多样类群", target: "artiodactyla" },
-            { text: "🦁 食肉目：具有锋利犬齿和爪子，专业或杂食性捕食", target: "carnivora" },
-            { text: "🦎 鳞甲目：全身角质鳞片覆盖，食蚁性鳞片哺乳动物", target: "pholidota" }
+            { text: "🦇 唯一真正飞行的哺乳动物", target: "chiroptera" },
+            { text: "🦔 原始食虫类，包含刺猬、鼩鼱、鼹鼠", target: "eulipotyphla" },
+            { text: "🐴 中大型草食有蹄类，第三趾发达", target: "perissodactyla" },
+            { text: "🐮 最繁盛有蹄类，包含鲸类等多样类群", target: "artiodactyla" },
+            { text: "🦁 具有锋利犬齿和爪子，专业或杂食性捕食", target: "carnivora" },
+            { text: "🦎 全身角质鳞片覆盖，食蚁性", target: "pholidota" }
         ]
     },
 
@@ -1929,10 +1846,10 @@ const nodeMap = {
         icon: "🦇",
         description: "唯一真正具有飞行能力的哺乳动物。前肢特化为翼膜，回声定位高度发达（部分种类）。夜行性，群居洞穴中。",
         geologicalPeriod: "始新世早期（约5500万年前）",
-        question: "选择亚目：",
+        question: "蝙蝠的回声定位方式和视觉依赖不同：",
         options: [
-            { text: "🦇 阴翼手亚目：狐蝠主要靠视觉，菊头蝠用高频回声定位", target: "yinpterochiroptera" },
-            { text: "🦇 阳翼手亚目：喉部超声波回声定位，物种多样性极高", target: "yangochiroptera" }
+            { text: "🦇 狐蝠主要靠视觉，菊头蝠用高频回声定位", target: "yinpterochiroptera" },
+            { text: "🦇 喉部超声波回声定位，物种多样性极高", target: "yangochiroptera" }
         ]
     },
 
@@ -1942,15 +1859,15 @@ const nodeMap = {
         icon: "🦇",
         description: "包含狐蝠（主要靠视觉）和菊头蝠类（使用高频回声定位）。",
         geologicalPeriod: "始新世（约6300万年前）",
-        question: "选择科：",
+        question: "阴翼手类不同科的回声定位复杂度和食性不同：",
         options: [
-            { text: "🍎 狐蝠科：大体型、食水果花蜜、主要靠视觉和嗅觉导航", target: "pteropodidae" },
-            { text: "🦇 菊头蝠科：复杂鼻叶结构、高频回声定位、多种病毒宿主", target: "rhinolophidae" },
-            { text: "🦇 蹄蝠科：马蹄形鼻叶、旧大陆热带洞穴栖息", target: "hipposideridae" },
-            { text: "🦇 假吸血蝠科：大型体型、捕食昆虫小型脊椎动物", target: "megadermatidae" },
-            { text: "🦇 鞘尾蝠科：独特尾鞘、快速飞行、热带有分布", target: "emballonuridae" },
-            { text: "🦇 吸口蝠科：口鼻部吸盘结构、美洲分布", target: "mormoopidae" },
-            { text: "🦇 盘翼蝠科：足部腕部吸盘、光滑表面附着", target: "thyropteridae" }
+            { text: "🍎 大体型，食水果花蜜，主要靠视觉和嗅觉导航", target: "pteropodidae" },
+            { text: "🦇 复杂鼻叶结构，高频回声定位", target: "rhinolophidae" },
+            { text: "🦇 马蹄形鼻叶，旧大陆热带洞穴栖息", target: "hipposideridae" },
+            { text: "🦇 大型体型，捕食昆虫和小型脊椎动物", target: "megadermatidae" },
+            { text: "🦇 独特尾鞘，快速飞行，热带分布", target: "emballonuridae" },
+            { text: "🦇 口鼻部吸盘结构，美洲分布", target: "mormoopidae" },
+            { text: "🦇 足部腕部吸盘，光滑表面附着", target: "thyropteridae" }
         ]
     },
 
@@ -2030,15 +1947,15 @@ const nodeMap = {
         icon: "🦇",
         description: "主要利用喉部发出超声波进行回声定位的蝙蝠，物种多样性极高。",
         geologicalPeriod: "始新世（约6300万年前）",
-        question: "选择科：",
+        question: "阳翼手类不同科适应了从建筑到洞穴的多样栖息地：",
         options: [
-            { text: "🦇 蝙蝠科：种类最多、适应力强、全球分布", target: "vespertilionidae" },
-            { text: "🐕 犬吻蝠科：快速飞行、长尾突出、群居建筑缝隙", target: "molossidae" },
-            { text: "🍃 叶口蝠科：鼻叶结构、食性多样（吸血/食果/食虫）", target: "phyllostomidae" },
-            { text: "🦇 凹脸蝠科：独特面部结构、美洲小型蝙蝠", target: "furipteridae" },
-            { text: "🦇 长腿蝠科：腿较长、洞穴生活、美洲分布", target: "natalidae" },
-            { text: "🦇 短尾蝠科：新西兰特有、能在地面行走", target: "mystacinidae" },
-            { text: "🦇 狂蝠科：北美分布、栖息建筑物和洞穴", target: "antrozoidae" }
+            { text: "🦇 种类最多，适应力强，全球分布", target: "vespertilionidae" },
+            { text: "🐕 快速飞行，长尾突出，群居建筑缝隙", target: "molossidae" },
+            { text: "🍃 鼻叶结构，食性多样（吸血/食果/食虫）", target: "phyllostomidae" },
+            { text: "🦇 独特面部结构，美洲小型", target: "furipteridae" },
+            { text: "🦇 腿较长，洞穴生活，美洲分布", target: "natalidae" },
+            { text: "🦇 新西兰特有，能在地面行走", target: "mystacinidae" },
+            { text: "🦇 北美分布，栖息建筑物和洞穴", target: "antrozoidae" }
         ]
     },
 
@@ -2119,12 +2036,12 @@ const nodeMap = {
         icon: "🦔",
         description: "包含刺猬、鼩鼱、鼹鼠等，是原始的食虫类群。鼹鼠适应地下生活，而刺猬具有保护性的棘刺。",
         geologicalPeriod: "古新世（约6500万年前）",
-        question: "选择科：",
+        question: "真盲缺目的不同科适应了地下、地面和半水生环境：",
         options: [
-            { text: "🦔 猬科：刺状毛发防御、遇敌卷曲成球、夜行食虫", target: "erinaceidae" },
-            { text: "🐁 鼩鼱科：体型极小、高代谢需频繁进食、唾液毒素", target: "soricidae" },
-            { text: "⛏️ 鼹科：地下穴居、眼退化、前肢特化挖掘", target: "talpidae" },
-            { text: "🦔 沟齿鼩科：加勒比特有、毒腺活化石、濒危", target: "solenodontidae" }
+            { text: "🦔 刺状毛发防御，遇敌卷曲成球，夜行食虫", target: "erinaceidae" },
+            { text: "🐁 体型极小，高代谢需频繁进食，唾液毒素", target: "soricidae" },
+            { text: "⛏️ 地下穴居，眼退化，前肢特化挖掘", target: "talpidae" },
+            { text: "🦔 加勒比特有，毒腺活化石，濒危", target: "solenodontidae" }
         ]
     },
 
@@ -2175,9 +2092,9 @@ const nodeMap = {
         icon: "🦎",
         description: "全身覆盖角质鳞片的哺乳动物，即穿山甲。以蚂蚁和白蚁为食，用长舌捕食。是世界上被走私最多的哺乳动物。",
         geologicalPeriod: "始新世晚期（约4000万年前）",
-        question: "选择科：",
+        question: "鳞甲目的防御和取食适应：",
         options: [
-            { text: "🦎 穿山甲科：角质鳞甲覆盖、食蚁长舌、遇敌卷曲", target: "manidae" }
+            { text: "🦎 角质鳞甲覆盖，食蚁长舌，遇敌卷曲", target: "manidae" }
         ]
     },
 
@@ -2198,10 +2115,10 @@ const nodeMap = {
         icon: "🐴",
         description: "奇蹄目是较原始的有蹄类，第三趾特别发达。虽不如偶蹄目繁盛，但在演化史上出现较早。",
         geologicalPeriod: "古新世晚期（约5600万年前）",
-        question: "选择亚目：",
+        question: "奇蹄目的脚趾数和体型大小不同：",
         options: [
-            { text: "🐴 马形亚目：单趾着地、高速奔跑、群居社会性强", target: "hippomorpha" },
-            { text: "🦏 角形亚目：鼻角特化、体型庞大、皮厚如铠甲", target: "ceratomorpha" }
+            { text: "🐴 单趾着地，高速奔跑，群居社会性强", target: "hippomorpha" },
+            { text: "🦏 鼻角特化，体型庞大，皮厚如铠甲", target: "ceratomorpha" }
         ]
     },
 
@@ -2212,9 +2129,9 @@ const nodeMap = {
         icon: "🐴",
         description: "包含马、驴、斑马等，从始祖马演化而来，脚趾减少至单趾（马蹄）。擅长奔跑，具有高度的社会结构。",
         geologicalPeriod: "始新世早期（约5500万年前）",
-        question: "选择科：",
+        question: "马形类的奔跑适应：",
         options: [
-            { text: "🐴 马科：单趾着地、高速奔跑、草食性、群居", target: "equidae" }
+            { text: "🐴 单趾着地，高速奔跑，草食性，群居", target: "equidae" }
         ]
     },
 
@@ -2235,10 +2152,10 @@ const nodeMap = {
         icon: "🦏",
         description: "包含犀牛和貘，体型庞大的草食动物，以角著称（实际是致密毛发）。皮肤厚重如铠甲，现存五种犀牛均为濒危物种。",
         geologicalPeriod: "始新世（约5000万年前）",
-        question: "选择科：",
+        question: "角形类的防御和取食适应：",
         options: [
-            { text: "🦏 犀科：厚皮铠甲、鼻角（毛发特化）、现存最大奇蹄类", target: "rhinocerotidae" },
-            { text: "🐽 貘科：短象鼻状吻部、喜水、活化石", target: "tapiridae" }
+            { text: "🦏 厚皮铠甲，鼻角（毛发特化），现存最大奇蹄类", target: "rhinocerotidae" },
+            { text: "🐽 短象鼻状吻部，喜水，活化石", target: "tapiridae" }
         ]
     },
 
@@ -2269,12 +2186,12 @@ const nodeMap = {
         icon: "🐮",
         description: "偶蹄目是现代最繁盛的有蹄类，第三和第四趾同等发达。全球约220种，包括牛、羊、鹿、猪、长颈鹿、河马等。",
         geologicalPeriod: "古新世晚期（约5500万年前）",
-        question: "选择亚目：",
+        question: "偶蹄目的消化系统和栖息地不同：",
         options: [
-            { text: "🐷 猪形亚目：杂食、发达嗅觉、智商较高", target: "suina" },
-            { text: "🦛 胼足亚目：足部胼胝垫、适应干旱、驼峰储存脂肪", target: "tylopoda" },
-            { text: "🐮 反刍亚目：复杂多室胃、能够反刍消化粗纤维", target: "ruminantia" },
-            { text: "🐋 鲸河马亚目：部分重返水生、鲸类与河马亲缘", target: "whippomorpha" }
+            { text: "🐷 杂食，发达嗅觉，智商较高", target: "suina" },
+            { text: "🦛 足部胼胝垫，适应干旱，驼峰储存脂肪", target: "tylopoda" },
+            { text: "🐮 复杂多室胃，能够反刍消化粗纤维", target: "ruminantia" },
+            { text: "🐋 部分重返水生，鲸类与河马亲缘", target: "whippomorpha" }
         ]
     },
 
@@ -2285,10 +2202,10 @@ const nodeMap = {
         icon: "🐷",
         description: "包含猪科和西猯科。杂食性动物，嗅觉发达，智商较高。猪的驯化历史超过一万年，是重要的家畜。",
         geologicalPeriod: "始新世（约5000万年前）",
-        question: "选择科：",
+        question: "猪形类的食性和社会性：",
         options: [
-            { text: "🐷 猪科：杂食、发达嗅觉、高智商、重要家畜", target: "suidae" },
-            { text: "🐗 西猯科：美洲特有、体型较小、胃复杂、群居", target: "tayassuidae" }
+            { text: "🐷 杂食，发达嗅觉，高智商，重要家畜", target: "suidae" },
+            { text: "🐗 美洲特有，体型较小，胃复杂，群居", target: "tayassuidae" }
         ]
     },
 
@@ -2319,9 +2236,9 @@ const nodeMap = {
         icon: "🐫",
         description: "包含骆驼科，特征为足上有胼胝状的垫。适应干旱环境，有储存脂肪的驼峰。代表物种：单峰驼、羊驼。",
         geologicalPeriod: "始新世中期（约4500万年前）",
-        question: "选择科：",
+        question: "胼足类的干旱适应：",
         options: [
-            { text: "🐫 骆驼科：胼足垫、驼峰储存脂肪、适应干旱环境", target: "camelidae" }
+            { text: "🐫 胼足垫，驼峰储存脂肪，适应干旱环境", target: "camelidae" }
         ]
     },
 
@@ -2342,10 +2259,10 @@ const nodeMap = {
         icon: "🦌",
         description: "反刍亚目是偶蹄目中最大的次目，拥有复杂的胃结构（多室胃），能够反刍消化粗纤维。",
         geologicalPeriod: "始新世晚期（约4000万年前）",
-        question: "选择下目：",
+        question: "反刍类的角和体型不同：",
         options: [
-            { text: "🦛 鼷鹿下目：无角、体型小、森林热带环境", target: "tragulina" },
-            { text: "🦌 有角下目：骨质角（分枝或洞角）、多样性高", target: "pecora" }
+            { text: "🦛 无角，体型小，森林热带环境", target: "tragulina" },
+            { text: "🦌 骨质角（分枝或洞角），多样性高", target: "pecora" }
         ]
     },
 
@@ -2367,14 +2284,14 @@ const nodeMap = {
         icon: "🦌",
         description: "有角下目是反刍亚目最繁盛的类群，具有骨质角。包括长颈鹿科、鹿科、牛科等。",
         geologicalPeriod: "渐新世晚期（约2500万年前）",
-        question: "选择科：",
+        question: "有角下目的角结构和取食高度不同：",
         options: [
-            { text: "🦒 长颈鹿科：极长脖子、蓝黑色舌头、非洲特有", target: "giraffidae" },
-            { text: "🦌 鹿科：雄性分枝鹿角、季节脱落重长", target: "cervidae" },
-            { text: "🐃 牛科：洞角（不分枝）、反刍消化、种类多样", target: "bovidae" },
-            { text: "🦌 叉角羚科：西半球最快陆地动物、分叉角每年脱落", target: "antilocapridae" },
-            { text: "🦙 麝科：獠牙、无角、雄性麝香囊", target: "moschidae" },
-            { text: "🦌 鹿豚科：最原始反刍类、无角、体型如兔", target: "tragulidae" }
+            { text: "🦒 极长脖子，蓝黑色舌头，非洲特有", target: "giraffidae" },
+            { text: "🦌 雄性分枝鹿角，季节脱落重长", target: "cervidae" },
+            { text: "🐃 洞角（不分枝），反刍消化，种类多样", target: "bovidae" },
+            { text: "🦌 西半球最快陆地动物，分叉角每年脱落", target: "antilocapridae" },
+            { text: "🦙 獠牙，无角，雄性麝香囊", target: "moschidae" },
+            { text: "🦌 最原始反刍类，无角，体型如兔", target: "tragulidae" }
         ]
     },
 
@@ -2451,10 +2368,10 @@ const nodeMap = {
         icon: "🐋",
         description: "河马和鲸的共同祖先演化而来，是一个有趣的演化分支，一部分重新适应水生生活成为鲸类。",
         geologicalPeriod: "始新世早期（约5400万年前）",
-        question: "选择下目：",
+        question: "重返水生的程度不同：",
         options: [
-            { text: "🦛 河马形下目：半水生、巨大体型、与鲸类亲缘", target: "ancodonta" },
-            { text: "🐋 鲸下目：完全水生、鳍状肢、流线型身体", target: "cetacea" }
+            { text: "🦛 半水生，巨大体型，与鲸类亲缘", target: "ancodonta" },
+            { text: "🐋 完全水生，鳍状肢，流线型身体", target: "cetacea" }
         ]
     },
 
@@ -2465,9 +2382,9 @@ const nodeMap = {
         icon: "🦛",
         description: "包含河马科，体型巨大的半水生哺乳动物。虽然外形像猪，但亲缘关系更接近鲸类。",
         geologicalPeriod: "始新世晚期（约3800万年前）",
-        question: "选择科：",
+        question: "河马的水生适应：",
         options: [
-            { text: "🦛 河马科：半水生、巨大体型、獠牙、领地意识", target: "hippopotamidae" }
+            { text: "🦛 半水生，巨大体型，獠牙，领地意识", target: "hippopotamidae" }
         ]
     },
 
@@ -2488,10 +2405,10 @@ const nodeMap = {
         icon: "🐋",
         description: "鲸下目是重返海洋的哺乳动物，四肢完全演化为鳍状，身体呈流线型。它们是海洋中体型最大的动物。",
         geologicalPeriod: "始新世早期（约5300万年前）",
-        question: "选择小目：",
+        question: "鲸类的取食方式和牙齿类型不同：",
         options: [
-            { text: "🐋 须鲸小目：地球最大动物群、须板滤食磷虾", target: "mysticeti" },
-            { text: "🦈 齿鲸小目：有牙齿、高度社会化、回声定位", target: "odontoceti" }
+            { text: "🐋 须板滤食磷虾，地球最大动物群", target: "mysticeti" },
+            { text: "🦈 有牙齿，高度社会化，回声定位", target: "odontoceti" }
         ]
     },
 
@@ -2502,11 +2419,11 @@ const nodeMap = {
         icon: "🐋",
         description: "地球上体型最大的动物群，通过须板过滤海水获取磷虾和小鱼。蓝鲸可达30米长，体重超过150吨。",
         geologicalPeriod: "渐新世（约3000万年前）",
-        question: "选择科：",
+        question: "须鲸的喉部结构和迁徙习性不同：",
         options: [
-            { text: "🐋 须鲸科：蓝鲸长须鲸座头鲸、喉腹部褶沟滤食", target: "balaenopteridae" },
-            { text: "🐋 露脊鲸科：巨大头部占体长1/3、行动缓慢、厚鲸脂", target: "balaenidae" },
-            { text: "🐋 灰鲸科：北美洲西海岸迁徙、往返2万公里", target: "eschrichtiidae" }
+            { text: "🐋 喉腹部褶沟滤食，包括蓝鲸座头鲸", target: "balaenopteridae" },
+            { text: "🐋 巨大头部占体长1/3，行动缓慢，厚鲸脂", target: "balaenidae" },
+            { text: "🐋 北美洲西海岸迁徙，往返2万公里", target: "eschrichtiidae" }
         ]
     },
 
@@ -2547,13 +2464,13 @@ const nodeMap = {
         icon: "🐬",
         description: "具有牙齿的鲸类，包括海豚、抹香鲸等。高度社会化的海豚拥有复杂的行为和回声定位系统。",
         geologicalPeriod: "始新世晚期（约3400万年前）",
-        question: "选择科：",
+        question: "齿鲸的社会结构和栖息地不同：",
         options: [
-            { text: "🐬 海豚科：高智力、群居、回声定位、包含虎鲸", target: "delphinidae" },
-            { text: "🐋 抹香鲸科：最大齿鲸、深潜能力、鲸脑油", target: "physeteridae" },
-            { text: "🐋 喙鲸科：喙状吻部、深海潜水、罕见", target: "ziphiidae" },
-            { text: "🐬 鼠海豚科：小型、短喙、近岸生活", target: "phocoenidae" },
-            { text: "🦄 独角鲸科：北极海域、独角鲸长牙、白鲸", target: "monodontidae" }
+            { text: "🐬 高智力，群居，回声定位，包含虎鲸", target: "delphinidae" },
+            { text: "🐋 最大齿鲸，深潜能力，鲸脑油", target: "physeteridae" },
+            { text: "🐋 喙状吻部，深海潜水，罕见", target: "ziphiidae" },
+            { text: "🐬 小型，短喙，近岸生活", target: "phocoenidae" },
+            { text: "🦄 北极海域，独角鲸长牙，白鲸", target: "monodontidae" }
         ]
     },
 
@@ -2614,10 +2531,10 @@ const nodeMap = {
         icon: "🦁",
         description: "食肉目是哺乳动物中最成功的捕食者类群，拥有锋利的牙齿和爪子。虽然名为食肉，但很多成员已演化为杂食甚至完全素食。",
         geologicalPeriod: "古新世晚期（约5600万年前）",
-        question: "选择亚目：",
+        question: "食肉目的爪子伸缩性和社会性不同：",
         options: [
-            { text: "🐱 猫型亚目：可伸缩爪子、敏捷掠食者、夜视能力强", target: "feliformia" },
-            { text: "🐶 犬型亚目：生态位多样、从海豹到熊类", target: "caniformia" }
+            { text: "🐱 可伸缩爪子，敏捷掠食者，夜视能力强", target: "feliformia" },
+            { text: "🐶 爪不伸缩，生态位多样，从海豹到熊类", target: "caniformia" }
         ]
     },
 
@@ -2628,14 +2545,14 @@ const nodeMap = {
         icon: "🐱",
         description: "猫型亚目包括猫科、灵猫科、獴科等，多为敏捷的掠食者。它们拥有可伸缩的爪子和出色的夜视能力。",
         geologicalPeriod: "始新世早期（约5500万年前）",
-        question: "选择科：",
+        question: "猫型类不同科的捕食和防御策略不同：",
         options: [
-            { text: "🐱 猫科：可伸缩爪、灵活身体、伏击猎手", target: "felidae" },
-            { text: "🦡 灵猫科：香腺、夜行性、森林环境", target: "viverridae" },
-            { text: "🦨 鬣狗科：强大咬合力、能咬碎骨头、群居", target: "hyaenidae" },
-            { text: "🦔 獴科：蛇毒免疫、群居协作、捕食蛇类", target: "herpestidae" },
-            { text: "🦝 食蚁狸科：马达加斯加特有、独特演化分支", target: "eupleridae" },
-            { text: "🐱 马岛灵猫科：马达加斯加最大食肉动物", target: "fossidae" }
+            { text: "🐱 可伸缩爪，灵活身体，伏击猎手", target: "felidae" },
+            { text: "🦡 香腺，夜行性，森林环境", target: "viverridae" },
+            { text: "🦨 强大咬合力，能咬碎骨头，群居", target: "hyaenidae" },
+            { text: "🦔 蛇毒免疫，群居协作，捕食蛇类", target: "herpestidae" },
+            { text: "🦝 马达加斯加特有，独特演化分支", target: "eupleridae" },
+            { text: "🐱 马达加斯加最大食肉动物", target: "fossidae" }
         ]
     },
 
@@ -2710,10 +2627,10 @@ const nodeMap = {
         icon: "🐶",
         description: "犬型亚目包括犬科、熊科、海豹科等，生态位极其多样。从体型微小的狐狸到巨大的北极熊，都属于这个灵活的类群。",
         geologicalPeriod: "始新世早期（约5500万年前）",
-        question: "选择下目：",
+        question: "犬型类中，重返海洋和陆地生活的不同：",
         options: [
-            { text: "🐶 犬形下目：陆生、群体狩猎、擅长追踪", target: "canida" },
-            { text: "🦭 鳍足形下目：重返海洋、四肢鳍状、海豹海狮海象", target: "pinnipedia" }
+            { text: "🐶 陆生，群体狩猎，擅长追踪", target: "canida" },
+            { text: "🦭 重返海洋，四肢鳍状，海豹海狮海象", target: "pinnipedia" }
         ]
     },
 
@@ -2723,15 +2640,15 @@ const nodeMap = {
         icon: "🐶",
         description: "包含犬科、熊科、鼬科等陆生犬形类，是陆生肉食类的主要类群。",
         geologicalPeriod: "始新世早期（约5500万年前）",
-        question: "选择科：",
+        question: "陆生犬型类的体型和食性不同：",
         options: [
-            { text: "🐶 犬科：群体狩猎、长途追踪、社会性强", target: "canidae" },
-            { text: "🐻 熊科：巨大体型、冬眠、杂食", target: "ursidae" },
-            { text: "🦦 鼬科：种类最多、臭腺防御、多样生态位", target: "mustelidae" },
-            { text: "🦝 小熊猫科：竹食、红棕毛色、山地森林", target: "ailuridae" },
-            { text: "🐼 大熊猫科：竹食为主、伪拇指抓握、国宝", target: "ailuropodidae" },
-            { text: "🦨 臭鼬科：臭腺喷射防御、美洲分布", target: "mephitidae" },
-            { text: "🦝 浣熊科：洗食行为、灵活前肢、美洲分布", target: "procyonidae" }
+            { text: "🐶 群体狩猎，长途追踪，社会性强", target: "canidae" },
+            { text: "🐻 巨大体型，冬眠，杂食", target: "ursidae" },
+            { text: "🦦 种类最多，臭腺防御，多样生态位", target: "mustelidae" },
+            { text: "🦝 竹食，红棕毛色，山地森林", target: "ailuridae" },
+            { text: "🐼 竹食为主，伪拇指抓握，国宝", target: "ailuropodidae" },
+            { text: "🦨 臭腺喷射防御，美洲分布", target: "mephitidae" },
+            { text: "🦝 洗食行为，灵活前肢，美洲分布", target: "procyonidae" }
         ]
     },
 
@@ -2781,11 +2698,11 @@ const nodeMap = {
         icon: "🦭",
         description: "鳍足类是重新适应海洋生活的食肉目动物，四肢演化为鳍状。包括海象科、海狮科和海豹科。",
         geologicalPeriod: "渐新世（约3000万年前）",
-        question: "选择科：",
+        question: "鳍足类的外耳和移动方式不同：",
         options: [
-            { text: "🦭 海豹科：无外耳廓、鳍状后肢、海洋生活", target: "phocidae" },
-            { text: "🦦 海狮科：有外耳廓、陆上行走、性别二态", target: "otariidae" },
-            { text: "🦛 海象科：巨大獠牙、北极、贝类食性", target: "odobenidae" }
+            { text: "🦭 无外耳廓，鳍状后肢，海洋生活", target: "phocidae" },
+            { text: "🦦 有外耳廓，陆上行走，性别二态", target: "otariidae" },
+            { text: "🦛 巨大獠牙，北极，贝类食性", target: "odobenidae" }
         ]
     },
 
@@ -2852,50 +2769,6 @@ const nodeMap = {
         description: "无外耳廓的真海豹，四肢特化为鳍状，适合海洋生活，但在陆地繁殖。皮下脂肪厚，适应寒冷环境。",
         keyTraits: ["无耳海豹", "海洋生活", "厚脂肪"],
         geologicalPeriod: "中新世早期（约2000万年前）"
-    },
-
-    // 象鼩科
-    macroscelididae: {
-        id: "macroscelididae",
-        name: "象鼩科",
-        isLeaf: true,
-        icon: "🐭",
-        description: "象鼩科是象鼩目的代表，具有长鼻和灵活的身形，善于跳跃。",
-        keyTraits: ["长鼻", "跳跃", "非洲分布"],
-        geologicalPeriod: "古新世（约6000万年前）"
-    },
-
-    // 管齿科
-    tubulidentata: {
-        id: "tubulidentata",
-        name: "管齿科",
-        isLeaf: true,
-        icon: "🐷",
-        description: "管齿科仅包含土豚一种，是非洲特有的食蚁动物。",
-        keyTraits: ["食蚁", "非洲特有", "穴居"],
-        geologicalPeriod: "古新世晚期（约6500万年前）"
-    },
-
-    // 蹄兔科
-    procaviidae: {
-        id: "procaviidae",
-        name: "蹄兔科",
-        isLeaf: true,
-        icon: "🐰",
-        description: "蹄兔科是蹄兔目的代表，外形似兔但与大象亲缘关系更近。",
-        keyTraits: ["蹄状爪", "与大象近缘", "非洲分布"],
-        geologicalPeriod: "古新世中期（约6000万年前）"
-    },
-
-    // 海牛科
-    trichechidae: {
-        id: "trichechidae",
-        name: "海牛科",
-        isLeaf: true,
-        icon: "🐋",
-        description: "海牛科是海牛目的代表，完全水生，草食性，生活在淡水或海水中。",
-        keyTraits: ["水生", "草食性", "温顺"],
-        geologicalPeriod: "始新世（约5000万年前）"
     }
 };
 
