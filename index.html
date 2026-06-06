@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哺乳纲演化导航</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="header-top">
+                <h1 class="header-title">🌿 哺乳纲演化导航</h1>
+                <button class="atlas-btn" id="atlasBtn">
+                    📖 图鉴
+                </button>
+            </div>
+            <p class="header-subtitle">探索哺乳动物的演化奥秘，从起点走向万物</p>
+        </header>
+
+        <nav class="breadcrumb" id="breadcrumb">
+            <span class="breadcrumb-label">当前位置：</span>
+            <div class="breadcrumb-path" id="breadcrumbPath"></div>
+        </nav>
+
+        <main class="main-content" id="mainContent">
+            <div class="content-card" id="contentCard">
+                <div class="loading">加载中...</div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>数据来源：综合自维基百科、国家地理等公开科普资料</p>
+            <p>© 2026 哺乳纲演化导航 | 仅为科普目的</p>
+        </footer>
+    </div>
+
+    <!-- 图鉴弹窗 -->
+    <div class="atlas-modal" id="atlasModal">
+        <div class="atlas-modal-content">
+            <div class="atlas-header">
+                <h2 class="atlas-title">📖 哺乳动物图鉴</h2>
+                <button class="atlas-close" id="atlasClose">×</button>
+            </div>
+            <div class="atlas-stats" id="atlasStats">
+                已解锁: 0 / 0
+            </div>
+            <div class="atlas-actions">
+                <button class="atlas-action-btn" onclick="exportSave()">
+                    💾 导出存档
+                </button>
+                <button class="atlas-action-btn" onclick="importSave()">
+                    📂 导入存档
+                </button>
+            </div>
+            <div class="atlas-grid" id="atlasGrid"></div>
+        </div>
+    </div>
+
+    <!-- 解锁弹窗 -->
+    <div class="unlock-popup" id="unlockPopup"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
