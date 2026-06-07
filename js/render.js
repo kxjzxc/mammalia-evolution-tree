@@ -63,8 +63,7 @@ function renderContent() {
 function renderQuestionPanel(node) {
     const optionsHtml = node.options.map(opt => `
         <button class="option-btn" data-target="${opt.target}">
-            <span class="option-icon">${getOptionIcon(opt.text)}</span>
-            <span class="option-text">${opt.text}</span>
+            <span class="option-text">${removeEmoji(opt.text)}</span>
         </button>
     `).join('');
     
@@ -114,18 +113,10 @@ function renderDestinationPanel(node) {
     `;
 }
 
-// 从选项文本中提取图标
-function getOptionIcon(text) {
-    // 匹配emoji图标
-    const emojiMatch = text.match(/^([^\s]+)/);
-    if (emojiMatch) {
-        const potentialEmoji = emojiMatch[1];
-        // 检查是否是emoji（基本多语言平面）
-        if (potentialEmoji.codePointAt(0) > 127) {
-            return potentialEmoji;
-        }
-    }
-    return '➡️';
+// 移除文本中的emoji
+function removeEmoji(text) {
+    // 移除开头的emoji（包括emoji+空格）
+    return text.replace(/^[^\s]+\s*/, '').trim();
 }
 
 // 渲染图鉴
